@@ -17,13 +17,14 @@ var cronometro = setInterval(function() {
 
     if(tempo<0) {
         clearInterval(cronometro);
-        clearInterval(criaMosquito); 
+        clearInterval(criaMosquito);
+        window.location.href = "victory.html";
     }
 
     else {
         document.getElementById("cronometro").innerHTML = tempo;
     }
-    
+
 }, 1000);
 
 function posicaoRandomica() {
